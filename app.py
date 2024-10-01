@@ -99,7 +99,7 @@ if selected:
         for i, movie in enumerate(recommendations):
             with cols[i % 4]:
                 st.markdown(f"##### [{movie['title']} ({movie['year']})](https://www.imdb.com/title/{movie['imdb_id']})")
-                st.image(movie['poster'], use_column_width=True)
+                st.markdown(f"[![Poster]({movie['poster']})](https://www.imdb.com/title/{movie['imdb_id']})")
                 st.caption(f"Genres: {movie['genres']}")
     else:
         st.warning("No recommendations found.")
