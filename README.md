@@ -7,9 +7,9 @@ This is a Movie Recommendation System built using Content-Based Filtering. The a
 
 Check out the live demo of our Movie Recommendation System:
 
-[Movie Recommender Live Demo](https://movie-recommender-ziad.streamlit.app/)
+[Movie Recommender Live Demo](https://movie-recommender-ziad1.streamlit.app/)
 
-![Movie Recommender Demo](https://raw.githubusercontent.com/ziadmostafa1/Movie-Recommendation-System-using-Content-Based-Filtering/main/demo_screenshot.png)
+![Movie Recommender Demo](demo_screenshot.png)
 
 ## Features
 
