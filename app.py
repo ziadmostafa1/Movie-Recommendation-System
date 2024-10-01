@@ -1,5 +1,6 @@
 import pickle
 import streamlit as st
+import pandas as pd
 import requests
 from functools import lru_cache
 
@@ -23,8 +24,10 @@ st.markdown("""
 # Load data
 @st.cache_resource
 def load_data():
-    movies = pickle.load(open('movielist.pkl', 'rb'))
-    similarity = pickle.load(open('cosine_sim.pkl', 'rb'))
+    with open('movielist.pkl', 'rb') as file:
+        movies = pd.read_pickle(file)
+    with open('cosine_sim.pkl', 'rb') as file:
+        similarity = pd.read_pickle(file)
     return movies, similarity
 
 movies, similarity = load_data()
