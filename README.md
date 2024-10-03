@@ -51,7 +51,7 @@ Check out the live demo of our Movie Recommendation System:
 
 3. Select a movie from the dropdown or type a movie title to get recommendations.
 
-Alternatively, you can use our [live demo](https://movie-recommender-ziad.streamlit.app/) to try out the recommendation system without any setup.
+Alternatively, you can use our [live demo](https://movie-recommender-ziad1.streamlit.app/) to try out the recommendation system without any setup.
 
 ## Project Structure
 
