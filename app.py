@@ -3,6 +3,7 @@ import streamlit as st
 import pandas as pd
 import requests
 from functools import lru_cache
+import numpy as np
 
 st.set_page_config(layout="wide")
 
@@ -26,8 +27,13 @@ st.markdown("""
 def load_data():
     with open('movielist.pkl', 'rb') as file:
         movies = pd.read_pickle(file)
-    with open('cosine_sim.pkl', 'rb') as file:
-        similarity = pd.read_pickle(file)
+    with open('cosine_sim1.pkl', 'rb') as file:
+        sim1 = pd.read_pickle(file)
+    with open('cosine_sim2.pkl', 'rb') as file:
+        sim2 = pd.read_pickle(file)
+    with open('cosine_sim3.pkl', 'rb') as file:
+        sim3 = pd.read_pickle(file)
+    similarity = np.concatenate((sim1, sim2, sim3), axis=0)
     return movies, similarity
 
 movies, similarity = load_data()
