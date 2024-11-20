@@ -24,8 +24,8 @@ Check out the live demo of our Movie Recommendation System:
 
 1. Clone the repository:
    ```
-   git clone https://github.com/ziadmostafa1/Movie-Recommendation-System-using-Content-Based-Filtering.git
-   cd Movie-Recommendation-System-using-Content-Based-Filtering
+   git clone https://github.com/ziadmostafa1/Movie-Recommendation-System.git
+   cd Movie-Recommendation-System
    ```
 
 2. Install the required packages:
